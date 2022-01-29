@@ -1,0 +1,265 @@
+@font-face {
+    font-family: 'Netflix Sans';
+    font-display: always;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff) format('woff')
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(8, 8, 8, 0.8);
+}
+
+
+
+.main {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 120vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
+    url(https://assets.nflxext.com/ffe/siteui/vlv3/a1dc92ca-091d-4ca9-a05b-8cd44bbfce6a/f9368347-e982-4856-a5a4-396796381f28/RS-en-20191230-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    background-size: cover;
+}
+
+
+.navbar .logo img
+{
+    width: 200px;
+    padding: 10px 10px;
+}
+
+
+.sign-in-box
+{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    
+}
+
+.content
+{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.7);
+    padding: 30px 60px 200px;
+    margin-top: 200px;
+    width: 22%;
+    border-radius: 10px;
+}
+
+
+.content h2{
+    color: white;
+    font-size: 2.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content .fname, .email, .password
+{
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-family: 'Netflix Sans';
+    font-size: 1.2em;
+    margin: 7px 0px;
+    background-color: #333;
+    border: transparent;
+}
+
+.content .email::placeholder, .password::placeholder
+{
+    color: gray;
+}
+
+.content a
+{
+    color: white;
+    text-decoration: none;
+}
+
+.main .sign-in-box .content p
+{
+    color: #737373;
+}
+
+
+.content .sign-in-button
+{
+    margin-top: 35px;
+    padding: 15px 20px;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    border: transparent;
+    cursor: pointer;
+}
+
+.content .sign-up-call, .sign-up-now
+{
+    color: white;
+    font-family: 'Netflix Sans';
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 375px;
+    background-color: black;
+    margin-top: 10px;
+    justify-content: space-around;
+  }
+  
+  .footercon {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 50px;
+    background-color: transparent;
+  }
+  
+  .footer .flex1 {
+    color: #999;
+    justify-content: space-around;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 17px;
+    min-height: 30px;
+  }
+  
+  .footer .flex1 h5 {
+    align-self: flex-start;
+    color: white;
+    font-size: 1em;
+    font-family: 'Netflix Sans';
+    
+  }
+  
+  .list1 {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-items: flex-start;
+    align-self: center;
+    justify-content: center;
+    min-height: 50px;
+    font-size: 13px;
+    padding: 0px 70px;
+    text-align: left;
+  }
+  
+  .list1 li {
+    font-size: 13px;
+    margin: 7px -10px;
+    list-style-type: none;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-items: center;
+    align-self: flex-start;
+    justify-content: center;
+    font-family: 'Netflix Sans';
+  }
+  
+  .list1 li a {
+    color: #999;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  li a {
+    font-size: 13px;
+    text-align: center;
+    color: #999;
+  }
+  
+  .footertxt {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  
+  .end {
+    width: 100%;
+    min-height: 50px;
+    /* background-color: black; */
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: #999;
+    /* margin-top: -60px; */
+  }
+  
+  .end h2 {
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    font-family: 'Netflix Sans';
+  }
+
+@media (min-width: 250px) and (max-width: 980px)
+{
+    .content
+    {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0,0,0,0.7);
+        padding: 30px 60px 200px;
+        margin-top: 200px;
+        width: 60%;
+        border-radius: 10px;
+    }
+
+    .footer
+    {
+        width: 100%;
+    }
+
+  .footercon {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footercon .list1
+  {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .footercon .list1 li a
+  {
+    padding: 2px 20px;
+    font-size: 10px;
+  }
+
+  .navbar .logo img
+  {
+      margin-bottom: 20px;
+  }
+
+}
+
